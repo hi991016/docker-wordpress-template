@@ -13,7 +13,7 @@ docker-compose up -d
 
 ---
 
-## ⏹️ Stop the project (keep data)
+## Stop the project (keep data)
 
 ```bash
 docker-compose stop

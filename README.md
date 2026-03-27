@@ -56,7 +56,7 @@ rd /s /q your_project_folder_name
 
 ---
 
-## 📁 Cấu trúc thư mục
+## 📁 Folder structure
 
 ```
 your_project_folder_name/

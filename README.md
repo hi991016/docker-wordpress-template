@@ -1,4 +1,4 @@
-# 🐳 WordPress Docker Project
+# WordPress Docker Project
 
 ---
 

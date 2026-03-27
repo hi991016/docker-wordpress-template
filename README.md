@@ -2,7 +2,7 @@
 
 ---
 
-## 🚀 Khởi động dự án
+## 🚀 Start the project
 
 ```bash
 docker-compose up -d
@@ -13,17 +13,17 @@ docker-compose up -d
 
 ---
 
-## ⏹️ Dừng dự án (giữ lại data)
+## ⏹️ Stop the project (keep data)
 
 ```bash
 docker-compose stop
 ```
 
-> Data và file WordPress vẫn được giữ nguyên, chạy lại bình thường.
+> Data and WordPress files are preserved and can be resumed normally.
 
 ---
 
-## ▶️ Chạy lại sau khi dừng
+## ▶️ Restart after stopping
 
 ```bash
 docker-compose start
@@ -31,7 +31,7 @@ docker-compose start
 
 ---
 
-## 🔄 Restart dự án
+## 🔄 Restart the project
 
 ```bash
 docker-compose restart
@@ -39,19 +39,19 @@ docker-compose restart
 
 ---
 
-## 🗑️ Xoá sạch dự án
+## 🗑️ Remove the project completely
 
-> ⚠️ **Cảnh báo:** Toàn bộ database và file sẽ bị xoá vĩnh viễn!
+> ⚠️ **Warning:** All database data and files will be permanently deleted!
 
-**Bước 1:** Dừng và xoá containers + volume database
+**Step 1:** Stop and remove containers + database volume
 ```bash
 docker-compose down -v
 ```
 
-**Bước 2:** Xoá folder project trên máy (Windows)
+**Step 2:** Delete the project folder on your machine (Windows)
 ```bash
 cd ..
-rd /s /q tên_folder_project
+rd /s /q your_project_folder_name
 ```
 
 ---
@@ -59,22 +59,22 @@ rd /s /q tên_folder_project
 ## 📁 Cấu trúc thư mục
 
 ```
-tên_folder_project/
+your_project_folder_name/
 ├── docker-compose.yml
 ├── .env
 ├── README.md
-└── wordpress/          ← Toàn bộ file WordPress (theme, plugin, upload...)
+└── wordpress/          ← All WordPress files (theme, plugin, upload...)
 ```
 
 ---
 
-## ⚙️ Cấu hình (.env)
+## ⚙️ Configuration (.env)
 
-| Biến | Mô tả | Mặc định |
-|------|-------|---------|
-| `WP_PORT` | Port truy cập WordPress | `8080` |
-| `PMA_PORT` | Port truy cập phpMyAdmin | `8081` |
-| `DB_NAME` | Tên database | `wordpress` |
-| `DB_USER` | Username database | `root` |
-| `DB_PASSWORD` | Password database | `password` |
-| `DB_ROOT_PASSWORD` | Password root MariaDB | `password` |
+| Variable | Description | Default |
+|----------|-------------|---------|
+| `WP_PORT` | WordPress access port | `8080` |
+| `PMA_PORT` | phpMyAdmin access port | `8081` |
+| `DB_NAME` | Database name | `wordpress` |
+| `DB_USER` | Database username | `root` |
+| `DB_PASSWORD` | Database password | `password` |
+| `DB_ROOT_PASSWORD` | MariaDB root password | `password` |

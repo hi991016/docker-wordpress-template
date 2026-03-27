@@ -2,7 +2,7 @@
 
 ---
 
-## 🚀 Start the project
+## Start the project
 
 ```bash
 docker-compose up -d
@@ -23,7 +23,7 @@ docker-compose stop
 
 ---
 
-## ▶️ Restart after stopping
+## Restart after stopping
 
 ```bash
 docker-compose start
@@ -31,7 +31,7 @@ docker-compose start
 
 ---
 
-## 🔄 Restart the project
+## Restart the project
 
 ```bash
 docker-compose restart
@@ -39,9 +39,9 @@ docker-compose restart
 
 ---
 
-## 🗑️ Remove the project completely
+## Remove the project completely
 
-> ⚠️ **Warning:** All database data and files will be permanently deleted!
+> **Warning:** All database data and files will be permanently deleted!
 
 **Step 1:** Stop and remove containers + database volume
 ```bash
@@ -56,7 +56,7 @@ rd /s /q your_project_folder_name
 
 ---
 
-## 📁 Folder structure
+## Folder structure
 
 ```
 your_project_folder_name/
@@ -68,7 +68,7 @@ your_project_folder_name/
 
 ---
 
-## ⚙️ Configuration (.env)
+## Configuration (.env)
 
 | Variable | Description | Default |
 |----------|-------------|---------|

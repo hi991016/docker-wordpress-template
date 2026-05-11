@@ -54,6 +54,12 @@ cd ..
 rd /s /q your_project_folder_name
 ```
 
+```bash
+docker compose down
+rm -rf ./wordpress
+docker compose up -d
+```
+
 ---
 
 ## Folder structure

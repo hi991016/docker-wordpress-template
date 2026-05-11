@@ -54,6 +54,7 @@ cd ..
 rd /s /q your_project_folder_name
 ```
 
+**Another**
 ```bash
 docker compose down
 rm -rf ./wordpress

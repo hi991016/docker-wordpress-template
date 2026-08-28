@@ -73,6 +73,15 @@ your_project_folder_name/
 └── wordpress/          ← All WordPress files (theme, plugin, upload...)
 ```
 
+## All-in-One
+
+**Step 1:** Copy the `.wpress` file to:
+   `/wordpress/wp-content/ai1wm-backups/`
+
+**Step 2:** Open the **All-in-One WP Migration** plugin.
+
+**Step 3:** Select **Backup** → **Restore**, then restore the `.wpress` file.
+
 ---
 
 ## Configuration (.env)
